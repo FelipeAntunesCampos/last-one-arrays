@@ -69,11 +69,29 @@ console.log(inventarioBeta); // Imprimi lista modificada
 console.log(ultimoElementoBeta); // Imprimi o item que foi retirado da lista
 
 //3) Três novos artefatos da Terra foram entregues à nave Alpha. Adicione-os ao final.
-let elementosAdicionadosAlpha = inventarioAlpha.push('Memória Galáctica', 'Capa de Invisibilidade', 'Globo de plasma')
+let elementosAdicionadosAlpha = inventarioAlpha.push('Memória Galáctica', 'Capa de Invisibilidade', 'Globo de plasma');//Adiciona 3 itens da terra na lista alpha
 
 console.log(inventarioAlpha); // Imprimi lista modificada
-console.log(elementosAdicionadosAlpha); // Imprimi os itens que foram adicionados na lista
+
+//4) Dois artefatos especiais de Kepler foram coletados e adicionados à nave Beta.
+let elementosAdicionadosBeta = inventarioBeta.push('Fragmento Prismático', 'Núcleo de Plasma');//Adiciona 2 itens do kepler na lista beta
+
+console.log(inventarioBeta);//Imprimi lista modificada
+
+//5) Um item da Alpha precisa aparecer no topo da lista para ser destacado na vitrine.
+let itemAMoverAlpha = inventarioAlpha[7]; // Armazena o valor do item
+inventarioAlpha.splice(7, 1); // Remove o item
+inventarioAlpha.splice(0, 1, itemAMoverAlpha); // Insere o item na nova posição
+console.log(inventarioAlpha);
+
+//6) Um item da Beta deve ser promovido para o início da lista para estudo prioritário.
+let itemAMoverBeta = inventarioBeta[7]; // Armazena o valor do item
+inventarioBeta.splice(7, 1); // Remove o item
+inventarioBeta.splice(0, 1, itemAMoverBeta); // Insere o item na nova posição
+console.log(inventarioBeta);
+
+//7) Um artefato incorreto foi inserido no topo da Alpha por engano. Ele deve ser excluído.
+let itemRemovidoAlpha = inventarioAlpha.shift() //Remove o primeiro item da lista
+console.log(inventarioAlpha); //Imprimi valor na tela
 
 
-
-console.table(elementosAdicionadosAlpha)

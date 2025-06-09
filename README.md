@@ -1,6 +1,3 @@
-Ótimo! Vamos organizar seu README.md com as informações da sua Missão Técnica: Inventário Interplanetário.
-
-Markdown
 
 # 🛰️ Missão Técnica: Inventário Interplanetário – Naves Alpha & Beta
 
